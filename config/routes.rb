@@ -13,5 +13,6 @@ Rails.application.routes.draw do
   get '/about', controller: 'spree/home', action: 'about'
   get '/contact', controller: 'spree/home', action: 'contact'
   get '/faq', controller: 'spree/home', action: 'faq'
-  get '/shop', controller: 'spree/home', action: 'shop'
+  get '/shop', controller: 'spree/home', action: 'index'
+  get '/home', controller: 'spree/home', action: 'home'
 end
