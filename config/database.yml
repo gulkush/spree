@@ -27,7 +27,7 @@ test:
 #
 production:
   <<: *default
-  url: <%= ENV['DATABASE_URL'] %>
+  url: postgres://medyybcxbowscf:63f56d5c97ad1fd609689ed69ea8b18087e10fd1e9f6d417dcb327816fe8b811@ec2-184-72-248-8.compute-1.amazonaws.com:5432/d28fk371d5vu8f
   database: d28fk371d5vu8f
   username: medyybcxbowscf
-  password: <%= ENV['DATABASE_PASSWORD'] %>
+  password: 63f56d5c97ad1fd609689ed69ea8b18087e10fd1e9f6d417dcb327816fe8b811
