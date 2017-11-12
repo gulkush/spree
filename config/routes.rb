@@ -9,4 +9,9 @@ Rails.application.routes.draw do
   # the default of "spree".
   mount Spree::Core::Engine, at: '/'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  get '/about', controller: 'spree/home', action: 'about'
+  get '/contact', controller: 'spree/home', action: 'contact'
+  get '/faq', controller: 'spree/home', action: 'faq'
+  get '/shop', controller: 'spree/home', action: 'shop'
 end

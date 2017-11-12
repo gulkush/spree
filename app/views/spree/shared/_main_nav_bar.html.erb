@@ -2,6 +2,11 @@
   <div id="main-nav-bar" class="navbar">
     <ul class="nav navbar-nav" data-hook>
       <li id="home-link" data-hook><%= link_to Spree.t(:home), spree.root_path %></li>
+      <li id="shop-link" data-hook><%= link_to Spree.t(:shop), main_app.shop_path %></li>
+      <li id="about-link" data-hook><%= link_to Spree.t(:about_us), main_app.about_path %></li>
+      <li id="contact-link" data-hook><%= link_to Spree.t(:contact_us), main_app.contact_path %></li>
+      <li id="faq-link" data-hook><%= link_to "FAQ", main_app.faq_path %></li>
+
     </ul>
     <ul class="nav navbar-nav navbar-right" data-hook>
       <li id="link-to-cart" data-hook>

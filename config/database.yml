@@ -9,11 +9,11 @@ default: &default
 
 development:
   <<: *default
-  database: solidus_dev
+  database: spree_dev
 
 test:
   <<: *default
-  database: solidus_test
+  database: spree_test
 
 # On Heroku and other platform providers, you may have a full connection URL
 # available as an environment variable. For example:
