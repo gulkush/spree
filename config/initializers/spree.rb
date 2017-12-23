@@ -31,7 +31,7 @@ Spree.config do |config|
         s3_headers:     { "Cache-Control" => "max-age=31557600" },
         s3_protocol:    "https",
         bucket:         "spree-uploads",
-        #s3_host_name: "s3.ap-south-1.amazonaws.com",
+        s3_host_name: "s3.ap-south-1.amazonaws.com",
         url:            ":s3_domain_url",
 
         styles: {
