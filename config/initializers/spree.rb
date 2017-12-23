@@ -30,8 +30,9 @@ Spree.config do |config|
         s3_region:      "ap-south-1",
         s3_headers:     { "Cache-Control" => "max-age=31557600" },
         s3_protocol:    "https",
-        bucket:         "ap-south-1",
-        url:            "https://s3.ap-south-1.amazonaws.com",
+        bucket:         "spree-uploads",
+        #s3_host_name: "s3.ap-south-1.amazonaws.com",
+        url:            ":s3_domain_url",
 
         styles: {
             mini:     "48x48>",
